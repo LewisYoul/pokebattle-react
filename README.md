@@ -54,8 +54,7 @@ Following the completion of the MVP we used stand ups and retros to discuss the 
 
 ## <a name="run">Run the App</a>
 
-The following covers the necessary steps for starting up the back-end Rails server for the Transgressions Battle game.
-Once you have completed these steps to you be able to head over to the client-side repo [here](https://github.com/tabrza/pokebattle-react) and follow the necessary steps to start playing the game!
+The following covers the necessary steps for starting up the client-side React JS application for the Transgressions Battle game. Before setting this up should ensure that you have followed the steps for the back-end server [here](https://github.com/LewisYoul/transgression-battle-api).
 
 1. Clone this repository
 ```
@@ -67,33 +66,26 @@ git clone https://github.com/LewisYoul/pokebattle.git
 cd pokebattle
 ```
 
-3. Install all required dependencies
+3. Install all required dependencies using:
 ```
-bundle install
+npm install
 ```
 
-4. Setup the databases locally (this step requires that you already have PostgreSQL set up on your machine)
+4. Start the React App
 ```
-bin/rails rake db:setup
+npm start
 ```
 5. In order to allow communication between two local servers you may need to add [this](https://chrome.google.com/webstore/detail/cors-toggle/jioikioepegflmdnbocfhgmpmopmjkim?hl=en) plugin to chrome. It will allow your requests to have the correct headers.
-
-6. Run the sever on port 4000
-```
-bin/rails s -p 4000
-```
-
-7. Now navigate [here](https://github.com/tabrza/pokebattle-react) to get started with the client-side repo!
+Also ensure that you are running the Rails server on port 4000!
 
 ## <a name="challenges">Challenges</a>
 
-* Adding relationships to our models using rails and having them display correctly through the API.
-* If time had allowed we would like to have implemented the ability for a user to sign up/in/out as well as to create their own character.
-* For me personally, my greatest difficulty with this project has been testing - The use of the rails framework has made when and what to test far less clear than when simply using vanilla Ruby. When time permits I will be returning to this work to address this.
+* Learning a new language! While React JS is written in JavaScript it offers a very different way of thinking about how HTML elements are rendered to the page. Learning this all in one week as well as building a working product was certainly challenging.
+* Testing React! This is a challenge we eventually overcame through the use of the Jest testing framework. If I had more time on this project I would love to spend more time understanding how to efficiently test React.
 
 ## <a name="technologies">Technologies</a>
 
-This part of the application was built entirely with Ruby on Rails.
+JavaScript & React JS with Jest testing library
 
 ## <a name="team">Team</a>
 
