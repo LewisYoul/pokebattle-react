@@ -50,15 +50,13 @@ Following the completion of the MVP we used stand ups and retros to discuss the 
 - I would like to have background music whilst playing the game.
 ```
 
-![](public/uploads/player/image/home.png)
-
 ## <a name="run">Run the App</a>
 
 The following covers the necessary steps for starting up the client-side React JS application for the Transgressions Battle game. Before setting this up should ensure that you have followed the steps for the back-end server [here](https://github.com/LewisYoul/transgression-battle-api).
 
 1. Clone this repository
 ```
-git clone https://github.com/LewisYoul/pokebattle.git
+git clone https://github.com/LewisYoul/pokebattle-react
 ```
 
 2.  Navigate into the project directory
@@ -77,6 +75,8 @@ npm start
 ```
 5. In order to allow communication between two local servers you may need to add [this](https://chrome.google.com/webstore/detail/cors-toggle/jioikioepegflmdnbocfhgmpmopmjkim?hl=en) plugin to chrome. It will allow your requests to have the correct headers.
 Also ensure that you are running the Rails server on port 4000!
+
+![](public/images/home.png)
 
 ## <a name="challenges">Challenges</a>
 
